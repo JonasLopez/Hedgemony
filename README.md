@@ -12,4 +12,4 @@ find a path such that the explorer reaches treasure in n moves, <br />
 the recursive abstraction can <br />
 find a path such that the explorer reaches treasure in n-1 moves, starting one legal move closer to treasure
 
-
+## Version N Wishlist
