@@ -1,5 +1,5 @@
 # Hedgemony
-Maze: Problem Statement /ln
+Maze: Problem Statement
 What is the boolean value of the statement?
 Is it possible to get from the starting position to a goal?
 If it is possible, then how can we... v(0)
