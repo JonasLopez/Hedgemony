@@ -1,7 +1,7 @@
-# Hedgemony
-Maze: Problem Statement  
-What is the boolean value of the statement "Is it possible to get from the starting position to a goal?"  
-If it is possible, then how can we... v(0)  
+# Maze Problem
+
+## statement of problem  
+What is the Boolean value of the statement "it is possible to get from the starting position to treasure"?
 ...  
 ...  
 ...  
