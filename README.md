@@ -24,7 +24,8 @@ find a path such that the explorer reaches treasure in n-1 moves, starting one l
 2. Save the current position of the explorer to a 2d array showing its position in the maze.  
 3. Starting with the element to the right of the explorer, check if it is a legal element to move to. 
 (Legal elements for movement are not part of the path the explorer has already moved through and also not part of a wall.)  
-4. Check the adjacent elements. If the element is legal, then move to the location.  
+4. Check the adjacent elements. If the element is legal, then move to the location, and repeat from step 2.
+5. If there is a dead end reached, then go back to the stepping stone where the decision was made.
 
 
 ## class(es), with fields and methods
