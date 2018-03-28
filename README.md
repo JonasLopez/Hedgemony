@@ -18,6 +18,7 @@ The explorer is on the treasure–no moves need to be made.
 ## English or pseudocode description of algorithm
 
 ## class(es), with fields and methods
+TBA
 
 ## Version *n* Wishlist
 * all ways
