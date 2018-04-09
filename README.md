@@ -10,7 +10,7 @@ What is the Boolean value of the statement "it is possible to get from the start
 When I am asked to <br />
 find a path such that the explorer reaches treasure in n moves, <br />
 the recursive abstraction can <br />
-find a path such that the explorer reaches treasure in n-1 moves, starting one legal move closer to treasure
+find a path such that the explorer reaches treasure in n-1 moves, starting on a space adjacent to the space it was on before
 
 ## Base Case
 1. The explorer is on the treasure–no moves need to be made. Returns true.
