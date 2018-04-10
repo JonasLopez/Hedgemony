@@ -29,8 +29,48 @@ find a path such that the explorer reaches treasure in n-1 moves, starting on a 
 
 
 ## class(es), with fields and methods
-TBA
-
+* Displayer  
+Fields:  
+int windowHeight   
+Methods:  
+atTopOfWindow  
+lineSeparatorsIn  
+  
+* Maze  
+Fields:  
+int TREASURE  
+int WALL  
+int STEPPING_STONE  
+int EAST  
+int NORTH  
+int WEST  
+int SOUTH  
+int[][] maze  
+int MAX_RANKS  
+int rankCount  
+Vector explorerPosition  
+Methods:  
+toString  
+go  
+dropA  
+explorerIsOnA   
+  
+* Vector  
+Fields:  
+Methods:  
+add
+  
+* UserOfMaze  
+Fields:  
+Displayer displayer  
+Methods:  
+main  
+moveTest  
+dropTest  
+copyConstructTest  
+displayerTest  
+snapshotDemo  
+  
 ## Version *n* Wishlist
 * all ways
 * shortest way
