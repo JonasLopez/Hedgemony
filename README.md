@@ -20,11 +20,10 @@ find a path such that the explorer reaches treasure in n-1 moves, starting on a 
 1. Check for the two base cases: if the explorer is on the treasure or in a wall. <br />
     if true: executes base case. <br />
     if false: continue algorithm.
-2. Save the current position of the explorer to a 2d array showing its position in the maze.  
-3. Invoke the recursive abstraction, starting with the stepping stone of the explorer, check if it is a legal stepping stone to move to. 
-(Legal elements for movement are not part of the path the explorer has already moved through and also not part of a wall.)  
-4. Check the adjacent stepping stones. If the stepping stone is legal to move to, then move to it, and repeat from step 2.
-5. If there is a dead end reached, then go back to the stepping stone where the decision was made.
+2. Save the current position of the explorer showing its position in the maze.  
+3. Invoke the recursive abstraction, starting with the stepping stone to the east of the explorer and going counter-clockwise, check if it is a legal stepping stone to move to. If the stepping stone is legal to move to, then move to it, and repeat from step 2 by saving the current position of the explorer showing its position in the maze.
+(Legal elements for movement are not part of the path the explorer has already moved through and also not part of a wall.) 
+5. If there is a dead end reached, then recursively backtrack by going back to the previous saved position of the explorer.
 
 
 ## class(es), with fields and methods
