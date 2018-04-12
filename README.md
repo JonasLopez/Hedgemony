@@ -29,14 +29,15 @@ find a path such that the explorer reaches treasure in n-1 moves, starting on a 
 
 ## class(es), with fields and methods
 * Displayer  
-Fields:  
+  * **Fields**:  
 int windowHeight   
-Methods:  
+
+  * **Methods**:  
 atTopOfWindow  
 lineSeparatorsIn  
   
 * Maze  
-Fields:  
+  * **Fields**:  
 int TREASURE  
 int WALL  
 int STEPPING_STONE  
@@ -48,21 +49,25 @@ int[][] maze
 int MAX_RANKS  
 int rankCount  
 Vector explorerPosition  
-Methods:  
+
+  * **Methods**:  
 toString  
 go  
 dropA  
 explorerIsOnA   
   
 * Vector  
-Fields:  
-Methods:  
+  * **Fields**:  
+n/a
+  
+  * **Methods**:  
 add
   
 * UserOfMaze  
-Fields:  
+  * **Fields**:  
 Displayer displayer  
-Methods:  
+  
+  * **Methods**:  
 main  
 moveTest  
 dropTest  
@@ -73,3 +78,6 @@ snapshotDemo
 ## Version *n* Wishlist
 * all ways
 * shortest way
+
+## Known bugs
+TBA
