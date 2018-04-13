@@ -1,14 +1,13 @@
 /**
   Test MazeSolver class.
   
-  Taken from UserOfMaze:
   Requires command line arguments:
   o  the name of a file containing a maze.
   o  the rank and file where an explorer is starting.
   o  the height of the displayer.
   
   Ex:
-      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1 5  # no explorer, displayer has a height of 5
+      java UserOfMazeSolver mazes/4cell_treasureWest.txt -1 -1 5  # no explorer, displayer has a height of 5
 
 */
 
