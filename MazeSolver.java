@@ -32,13 +32,13 @@ public class MazeSolver {
 				Maze snapshot = new Maze(maze);
                 maze.dropA(Maze.WALL);
                 maze.go(direction);
-                display.atTopOfWindow(maze.toString());
+                terminalDisplayer(maze);
 
                 if (canMazeBeSolved()) return true;
                 
                 //recursively backtrack
                 maze = snapshot;
-                display.atTopOfWindow(maze.toString());
+                terminalDisplayer(maze);
             }
             //all 4 directions exhausted
             return false;
@@ -49,5 +49,10 @@ public class MazeSolver {
     public String toString() {
     	if (canMazeBeSolved()) return "true \n";
     	else return "false \n";
+    }
+    
+    //streamlines display in terminal
+    private void terminalDisplayer(Maze maze) {
+	display.atTopOfWindow(maze.toString());
     }
 }
