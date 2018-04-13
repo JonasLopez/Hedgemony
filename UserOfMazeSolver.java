@@ -21,7 +21,7 @@ public class UserOfMazeSolver {
                             	, Integer.parseInt( commandLine[1])
                             	, Integer.parseInt( commandLine[2])
                             	);
-
-        	System.out.println(MazeSolver.solveMaze(maze));
+          MazeSolver canMazeBeSolved = new MazeSolver(maze, Integer.parseInt( commandLine[3]));
+        	System.out.print(canMazeBeSolved);
        	}
 }

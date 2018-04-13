@@ -93,15 +93,13 @@ public class Maze {
         // throw new java.lang.RuntimeException(
         //     "Write code to copy the maze[][] array and rankCount.");
 
+        rankCount = old.rankCount;
         maze = new int[rankCount][];
         for (int rank = 0; rank < rankCount; rank++) {
-        	int fileCount = old.maze[rank].length;
-        	maze[rank] = new int[fileCount];
-        	for (int file = 0; file < fileCount; file++) {
-        		maze[rank][file] = old.maze[rank][file];
+        	 maze[rank] = old.maze[rank].clone();
         	}
-        }
     }
+    
 
 
     /**

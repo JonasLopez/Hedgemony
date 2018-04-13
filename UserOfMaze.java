@@ -163,13 +163,13 @@ public class UserOfMaze {
         snapshot = new Maze(candidate);
         candidate.go(Maze.NORTH);
 
-        // System.out.println(
-                            // "modified candidate with no explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // + "unchanged snapshot" + System.lineSeparator()
-                          // + snapshot + System.lineSeparator()
-                          // );
+        System.out.println(
+                            "modified candidate with no explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          + "unchanged snapshot" + System.lineSeparator()
+                          + snapshot + System.lineSeparator()
+                          );
 
         /* Expecting...
               modified candidate with no explorer
