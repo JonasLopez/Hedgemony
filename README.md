@@ -82,6 +82,7 @@ Displayer display
   * **Methods**:  
 canMazeBeSolved  
 toString  
+terminalDisplayer
 
 * UserOfMazeSolver
   * **Fields**:  
