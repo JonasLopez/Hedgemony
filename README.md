@@ -66,13 +66,29 @@ add
   * **Fields**:  
 Displayer displayer  
   
-  * **Methods**:  
+  * **Methods**:    
 main  
 moveTest  
 dropTest  
 copyConstructTest  
 displayerTest  
 snapshotDemo  
+
+* MazeSolver
+  * **Fields**:  
+Maze maze  
+Displayer display  
+
+  * **Methods**:  
+canMazeBeSolved  
+toString  
+
+* UserOfMazeSolver
+  * **Fields**:  
+n/a  
+
+  * **Methods**:  
+main
   
 ## Version *n* Wishlist
 * all ways
