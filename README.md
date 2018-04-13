@@ -99,4 +99,4 @@ main
 ## Known bugs
 * Displayer is faulty.
   * Although the explorer recognizes that there are walls in certain spots it had gone on before, the Displayer switches walls back to stepping stones when they should remain walls.
-  * The explorer disappears when it reaches an edge of the maze.
+  * Explorer sometimes disappears during operation
