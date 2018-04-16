@@ -10,13 +10,12 @@ public class MazeSolver {
     private final static int[] DIRECTIONS = {Maze.EAST, Maze.SOUTH, Maze.WEST, Maze.NORTH};
 
     public MazeSolver(Maze mazeInput, int heightInput) {
-    maze = mazeInput;
-    display = new Displayer(heightInput);
-    display.atTopOfWindow(maze.toString());
+        maze = mazeInput;
+        display = new Displayer(heightInput);
+        display.atTopOfWindow(maze.toString());
     }
     
     public boolean canMazeBeSolved() {
-
 
         //check for base cases
         if(maze.explorerIsOnA() == Maze.TREASURE) return true;
@@ -24,7 +23,6 @@ public class MazeSolver {
 
         //recursive case
         else {
-            //prepares a snapshot in case of recursive backtracking
 
             //starts east, then goes counter-clockwise      
             for (int direction : DIRECTIONS) {
@@ -38,7 +36,7 @@ public class MazeSolver {
                 if (canMazeBeSolved()) return true;
                 
                 //recursively backtrack
-                maze = new Maze(snapshot);
+                maze = new Maze(snapshot);                
                 System.out.println("after recursively backtracking:");
                 terminalDisplayer(maze);
             }
@@ -49,8 +47,8 @@ public class MazeSolver {
 
     //streamlines output in terminal
     public String toString() {
-        if (canMazeBeSolved()) return "true \n";
-        else return "false \n";
+        if (canMazeBeSolved()) return "true" + System.lineSeparator();
+        else return "false" + System.lineSeparator();
     }
     
     //streamlines display in terminal
