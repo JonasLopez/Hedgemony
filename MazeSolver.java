@@ -4,9 +4,10 @@
 */
 
 public class MazeSolver {
-	
-	private Maze maze;
+    
+    private Maze maze;
     private static Displayer display;
+    private final static int[] DIRECTIONS = {Maze.EAST, Maze.SOUTH, Maze.WEST, Maze.NORTH};
 
     public MazeSolver(Maze mazeInput, int heightInput) {
     maze = mazeInput;
@@ -26,18 +27,19 @@ public class MazeSolver {
             //prepares a snapshot in case of recursive backtracking
 
             //starts east, then goes counter-clockwise      
-        int[] directions = {Maze.EAST, Maze.SOUTH, Maze.WEST, Maze.NORTH};
-            for (int direction : directions) {
-				
-				Maze snapshot = new Maze(maze);
+            for (int direction : DIRECTIONS) {
+                
+                Maze snapshot = new Maze(maze);
                 maze.dropA(Maze.WALL);
                 maze.go(direction);
+                System.out.println("after moving to another stepping stone:");
                 terminalDisplayer(maze);
 
                 if (canMazeBeSolved()) return true;
                 
                 //recursively backtrack
-                maze = snapshot;
+                maze = new Maze(snapshot);
+                System.out.println("after recursively backtracking:");
                 terminalDisplayer(maze);
             }
             //all 4 directions exhausted
@@ -47,12 +49,12 @@ public class MazeSolver {
 
     //streamlines output in terminal
     public String toString() {
-    	if (canMazeBeSolved()) return "true \n";
-    	else return "false \n";
+        if (canMazeBeSolved()) return "true \n";
+        else return "false \n";
     }
     
     //streamlines display in terminal
     private void terminalDisplayer(Maze maze) {
-	display.atTopOfWindow(maze.toString());
+        display.atTopOfWindow(maze.toString());
     }
 }
