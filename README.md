@@ -99,4 +99,8 @@ main
 ## Known bugs
 * Displayer is faulty.
   * Although the explorer recognizes that there are walls in certain spots it had gone on before, the Displayer switches walls back to stepping stones when they should remain walls.
-  * Explorer sometimes disappears during operation
+  * Explorer sometimes disappears during operation.
+
+## v1
+* Fixed recursive backtracking code involving the snapshot.
+* Added more print statements to help clarify the status of an explorer in a maze.
